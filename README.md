@@ -152,7 +152,7 @@ Ex. MongoDB
    name: "test",
    age: 12,
    email: "test@gmail.com",
-   social: ["facebook","line","twitter"] => Array
+   social: ["facebook","line","twitter"]
 }
 ```
 
@@ -192,5 +192,7 @@ Ex. MongoDB
 
 ---
 
+การส่งออก และนำเข้า Document
+การ import export file.json ใน MongoDB Compass
 
 
