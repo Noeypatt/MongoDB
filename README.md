@@ -106,6 +106,7 @@ Ex. MongoDB
 - ลบฐานข้อมูล `db.dropDatabase()`
    - ต้องทำการเข้าไปในฐานข้อมูลก่อน
 
+---
 
 การจัดการ Collection
 เราจะจัดการได้ก็ต่อเมื่อเรามีฐานข้อมูลขึ้นมาก่อน
@@ -116,3 +117,25 @@ Ex. MongoDB
    `db.old-collection-name.renameCollection("new-collection-name")`
 - ลบ
    `db.collection-name.drop()`
+
+---
+
+ชนิดของข้อมูลใน MongoDB
+| ชนิดข้อมูล | รายละเอียด |
+| ----------- | ----------- |
+| String | ชุดข้อความ อักขระ ในรูป `""` |
+| Integer | เลขจำนวนเต็ม |
+| Double | เลขทศนิยม |
+| Boolean | ค่า true/false |
+| Null | ไม่มีค่า |
+| Object | document ในรูป `{}` |
+| Array | ชุดข้อมูลในรูป  `[] : brackets` |
+| ObjectId | เก็บ id ของ document (มีค่าไม่ซ้ำกัน) |
+| Date | เก็บวันที่และเวลา |
+| Binary Date | เก็บวันที่และเวลาแบบไบนารี่ |
+| Max / Min Key | เปรียบเทียบค่ามากกว่า / น้อยกว่า กับข้อมูลอื่นๆ |
+
+---
+
+
+
