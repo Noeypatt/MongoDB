@@ -101,6 +101,18 @@ Ex. MongoDB
 - แสดงฐานข้อมูล `show dbs`
 - สร้าง หรือเลือกฐานข้อมูล `use ชื่อฐานข้อมูล`
    - กรณียังไม่เคยมีฐานข้อมูล (สร้าง)
+      - `db.createCollection("Collection Name")`
    - กรณีมีฐานข้อมูลอยู่แล้ว (เลือก)
 - ลบฐานข้อมูล `db.dropDatabase()`
    - ต้องทำการเข้าไปในฐานข้อมูลก่อน
+
+
+การจัดการ Collection
+เราจะจัดการได้ก็ต่อเมื่อเรามีฐานข้อมูลขึ้นมาก่อน
+- สร้าง
+   `user database-name`
+   `db.createCollection("collection-name")`   
+- เปลี่ยนชื่อ
+   `db.old-collection-name.renameCollection("new-collection-name")`
+- ลบ
+   `db.collection-name.drop()`
