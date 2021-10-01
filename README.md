@@ -137,5 +137,9 @@ Ex. MongoDB
 
 ---
 
-
+การเพิ่ม Document (การบันทึกข้อมูล)
+- เพิ่ม 1 Document
+   `db.collection-name.insertOne(<Document>)`
+- เพิ่มหลาย Document
+  `db.collection-name.insertMany([<Document>])`
 
