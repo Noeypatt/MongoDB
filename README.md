@@ -143,3 +143,54 @@ Ex. MongoDB
 - เพิ่มหลาย Document
   `db.collection-name.insertMany([<Document>])`
 
+---
+
+การบันทึก Document แบบ Array
+
+```json
+{
+   name: "test",
+   age: 12,
+   email: "test@gmail.com",
+   social: ["facebook","line","twitter"] => Array
+}
+```
+
+`db.collection-name.insertOne({
+   name:'Test',
+   age:12,
+   email:"test@gmail.com",
+   social:["facebook","line","twitter"]
+})`
+
+การบันทึก Document แบบ Object
+
+```json
+{
+   name: "test",
+   age: 12,
+   email: "test@gmail.com",
+   social: ["facebook","line","twitter"]
+   address: { 
+      province: "bangkok",
+      district: "Khlong San",
+      subDistrict: "Khlong San"
+}
+```
+
+`db.collection-name.insertOne({
+   name:'Test',
+   age:12,
+   email:"test@gmail.com",
+   social:["facebook","line","twitter"],
+   address: { 
+      province: "bangkok",
+      district: "Khlong San",
+      subDistrict: "Khlong San"
+   }
+})`
+
+---
+
+
+
