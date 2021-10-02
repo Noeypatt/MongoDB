@@ -278,6 +278,32 @@ db.collection-name.find({$and:[{salary:{$gt:15000}},{salary:{$lt:45000}}]})
 ```
 
 ---
+
+การแก้ไข/อัปเดต Document 
+- อัปเดตรายการเดียว
+```json
+db.collection-name.updateOne({1,2,3})
+1. Document ที่ต้องการแก้ไข
+2. ระบุข้อมูลที่ต้องการแก้ไข
+3. ตัวเลือกเพิ่มเติม
+
+ex.
+db.collection-name.updateOne({field:"value"},{$set:{ชื่อฟิลด์ที่ต้องการแก้:"ค่าที่ต้องการแก้"}})
+```
+
+- อัปเดตหลายรายการ
+```json
+db.collection-name.updateMany({1,2,3})
+1. Document ที่ต้องการแก้ไข
+2. ระบุข้อมูลที่ต้องการแก้ไข
+3. ตัวเลือกเพิ่มเติม
+
+ex.
+db.collection-name.updateMany({field:"value"},{$set:{ชื่อฟิลด์ที่ต้องการแก้:"ค่าที่ต้องการแก้"}})
+```
+
+---
+
 คำสั่ง docker พื้นฐาน
 ```json
 docker ps (check container is running)
