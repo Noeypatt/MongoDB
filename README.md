@@ -304,6 +304,25 @@ db.collection-name.updateMany({field:"value"},{$set:{ชื่อฟิลด์
 
 ---
 
+การลบ Document
+- ลบรายการเดียว
+```json
+db.collection-name.deleteOne(filter)
+
+ex.
+db.collection-name.updateOne({field:"value"})
+```
+
+- ลบหลายรายการ
+```json
+db.collection-name.deleteMany(filter)
+
+ex.
+db.collection-name.deleteMany({field:"value"})
+```
+
+---
+
 คำสั่ง docker พื้นฐาน
 ```json
 docker ps (check container is running)
