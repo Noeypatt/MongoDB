@@ -323,6 +323,43 @@ db.collection-name.deleteMany({field:"value"})
 
 ---
 
+Aggregation และ Pipeline
+- Aggregation: การรวมข้อมูล 
+- Pipeline: กระบวนการนำข้อมูลมารวมเข้าด้วยกัน และทำการวิเคราะห์/ประมวลผล(stage) หาผลลัพธ์ที่ต้องการออกมา
+   - collection => stage => output
+   - `aggregate(stage[stage]) `
+   - โครงการคำสั่ง
+      ```json
+      db.collection-name.aggregate([stage])
+      ```
+
+การทำงานของ Stage
+
+| ชื่อ Stage | คำอธิบาย | 
+|-----|-------|
+| $match | กรองเอาเฉพาะ Document ที่ตรงตามเงื่อนไขที่กำหนด |
+| $group | จัดกลุ่ม Document และคำนวณค่าเก็บใน Output |
+| $project | แสดงข้อมูล Document เอาเฉาะ field ที่กำหนด |
+| $sort | จัดเรียง Document |
+| $skip | ข้าม Document ตามจำนวนที่ระบุ |
+| $limit | จำกัดการแสดงจำนวน Document |
+| $unwind | แยกสมาชิด field Array ออกเป็น Document |
+| $count | นับจำนวน Document |
+| $lookup | ดูข้อมูล Document ที่มี Collection ต่างกัน |
+
+เปรียบเทียบ SQL กับ Stage
+
+| SQL | Stage | 
+|-----|-------|
+| WHERE | $match |
+| GROUP BY | $group |
+| SELECT | $project |
+| ORDER BY | $sort |
+| LIMIT | $limit |
+| JOIN | $lookup |
+
+---
+
 คำสั่ง docker พื้นฐาน
 ```json
 docker ps (check container is running)
