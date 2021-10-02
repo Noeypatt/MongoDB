@@ -220,3 +220,7 @@ ex.
    `db.collection-name.find()`
    - ค้นหาแบบมีเงื่อนไข
      `db.collection-name.find({salary: 15000})`
+- สอบถามข้อมูลแบบ Object
+  `db.collection-name.find/findOne({"general.gender":"woman"})`
+- สอบถามข้อมูลแบบ Array[element,element]
+  `db.collection-name.find/findOne({"social":["facebook"]})`
