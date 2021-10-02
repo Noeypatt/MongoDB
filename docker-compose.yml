@@ -1,5 +1,7 @@
 version: '3.1'
 services:
-  mongo:
-    image: mongo
+  mongodb:
+    image: mongodb
     restart: always
+    ports:
+      - 8081:27017
