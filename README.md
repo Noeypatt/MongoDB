@@ -260,3 +260,23 @@ ex. หาพนักงานที่ส่วนสูง 170, 180 และ
 
 ---
 
+ตัวดำเนินการทางตรรกศาสตร์
+
+
+
+---
+คำสั่ง docker พื้นฐาน
+```json
+docker ps (check container is running)
+docker-compose up -d (pass => is connect mongo compass)
+docker exec -it container_name bash (inside mongo)
+
+docker stop container_name
+docker start container_name
+```
+
+คำสั่ง mongo พื้นฐาน (ใช้คำสั่งได้เหมือน mongo shell)
+```json
+mongo -host localhost -port 27017
+exit
+```
