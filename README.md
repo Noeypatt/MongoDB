@@ -368,6 +368,8 @@ docker exec -it container_name bash (inside mongo)
 
 docker stop container_name
 docker start container_name
+
+docker-compose down
 ```
 
 คำสั่ง mongo พื้นฐาน (ใช้คำสั่งได้เหมือน mongo shell)
