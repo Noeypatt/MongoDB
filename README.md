@@ -224,3 +224,21 @@ ex.
   `db.collection-name.find/findOne({"general.gender":"woman"})`
 - สอบถามข้อมูลแบบ Array[element,element]
   `db.collection-name.find/findOne({"social":["facebook"]})`
+
+---
+
+ตัวดำเนินการเปรียบเทียบ
+
+| ชื่อ | คำอธิบาย | การใช้งาน |
+|----|---------|----------|
+| $eq | เท่ากับ (equal) | `{field:{$eq:value}} or {field:{field:value}}`
+| $gt | มากกว่า (greater) | `{field:{$gt:value}}`
+| $gte | มากกว่าหรือเท่ากับ (greater or equal) | `{field:{$gte:value}}`
+| $lt | น้อยกว่า (less) | `{field:{$lt:value}}`
+| $lte | น้อยกว่าหรือเท่ากับ (less orequal) | `{field:{$lte:value}}`
+| $ne | ไม่เท่ากับ (not equal) | `{field:{$ne:value}}`
+
+ex. หาพนักงานที่มีเงินเดือนมากกว่า 15000
+`db.collection-name.find/findOne({salary:{$gt:15000}})`
+
+---
