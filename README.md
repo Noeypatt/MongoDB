@@ -548,6 +548,9 @@ docker-compose down
 คำสั่ง mongo พื้นฐาน (ใช้คำสั่งได้เหมือน mongo shell)
 
 ```json
+mongo
 mongo -host localhost -port 27017
+cls
+show dbs
 exit
 ```
