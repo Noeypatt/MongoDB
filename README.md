@@ -316,7 +316,7 @@ db.collection-name.updateMany({field:"value"},{$set:{ชื่อฟิลด์
 db.collection-name.deleteOne(filter)
 
 ex.
-db.collection-name.updateOne({field:"value"})
+db.collection-name.deleteOne({field:"value"})
 ```
 
 - ลบหลายรายการ
